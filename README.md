@@ -9,6 +9,4 @@ The integrated tests use child processes to pipe stdin into the spawned CLIs. AV
 To test, run `npm test`.
 
 ## Other
-Great challenge! :D
-
 Executables packaged with the very awesome [`pkg`](https://github.com/zeit/pkg)
