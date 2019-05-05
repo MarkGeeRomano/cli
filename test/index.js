@@ -1,10 +1,11 @@
 const test = require('ava')
 const { spawn } = require('child_process')
 const fs = require('fs')
+const path = require('path')
 
 const ascii = fs.readFileSync('./ascii.txt').toString()
 
-test.beforeEach(t => t.context.musicPlayer = spawn('node', [__dirname]))
+test.beforeEach(t => t.context.musicPlayer = spawn('node', [path.resolve(__dirname, '..')]))
 test.afterEach(t => t.context.musicPlayer = null)
 
 test('should log welcome msg', async (t) => {
