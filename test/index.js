@@ -3,7 +3,7 @@ const { spawn } = require('child_process')
 const fs = require('fs')
 const path = require('path')
 
-const ascii = fs.readFileSync('./ascii.txt').toString()
+const ascii = fs.readFileSync(path.resolve(__dirname,'..', 'assets', 'ascii.txt')).toString()
 
 test.beforeEach(t => t.context.musicPlayer = spawn('node', [path.resolve(__dirname, '..')]))
 test.afterEach(t => t.context.musicPlayer = null)

@@ -10,5 +10,11 @@
     "test": "ava --verbose"
   },
   "author": "mark",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "cli": "./index.js"
+  },
+  "pkg": {
+    "assets": "assets/*"
+  }
 }

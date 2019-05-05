@@ -1,11 +1,13 @@
 const EventEmitter = require('events')
 const fs = require('fs')
+const path = require('path')
 
 const reads = require('./read')
 const writes = require('./write')
 const validations = require('./validations')
 
-const note = fs.readFileSync('ascii.txt').toString()
+
+const note = fs.readFileSync(path.resolve(__dirname, 'assets', 'ascii.txt')).toString()
 
 class MusicPlayer {
   constructor() {
