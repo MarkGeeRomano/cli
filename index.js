@@ -6,7 +6,6 @@ const reads = require('./read')
 const writes = require('./write')
 const validations = require('./validations')
 
-
 const note = fs.readFileSync(path.resolve(__dirname, 'assets', 'ascii.txt')).toString()
 
 class MusicPlayer {
