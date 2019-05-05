@@ -1,0 +1,14 @@
+{
+  "name": "music-collection-cli",
+  "version": "1.0.0",
+  "description": "smol music player",
+  "main": "index.js",
+  "devDependencies": {
+    "ava": "^1.4.1"
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "author": "mark",
+  "license": "ISC"
+}
